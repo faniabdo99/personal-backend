@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Articles</h1>
+    <% articles.forEach(article => { %>
+        <div style="border-bottom:1px solid #ccc;padding:10px;">
+            <h2><%= article.title %> <br>
+                <small><%= article.date.toLocaleDateString() %></small>
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad harum sed impedit doloremque fugit? Recusandae similique officia et, quas laudantium, vero amet numquam incidunt dolore quaerat quasi sed rem ipsam?</p>
+            <a href="#">Edit</a>
+            <a href="#">Delete</a>
+            <a href="#">View</a>
+        </div>
+    <% }) %>
+</body>
+</html>
